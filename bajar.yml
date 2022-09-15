@@ -1,0 +1,4 @@
+- name: Bajar un servicio Windows
+  win_service:
+    name: snmptrap
+    state: stopped

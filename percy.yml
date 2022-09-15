@@ -1,0 +1,4 @@
+- name: Levantar un servicio Windows
+  win_service:
+    name: snmptrap
+    state: started
