@@ -1,4 +1,7 @@
-- name: Bajar un servicio Windows
-  win_service:
-    name: snmptrap
-    state: stopped
+ - name: Bajar
+   hosts: all
+   tasks:
+   - name: Bajar un servicio Windows
+     win_service:
+      name: snmptrap
+      state: stopped

@@ -1,4 +1,7 @@
-- name: Levantar un servicio Windows
-  win_service:
-    name: snmptrap
-    state: started
+- name: Subir
+  hosts: all
+  tasks:
+  - name: Levantar un servicio Windows
+    win_service:
+      name: snmptrap
+      state: started
